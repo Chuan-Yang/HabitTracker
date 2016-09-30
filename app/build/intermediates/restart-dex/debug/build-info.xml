@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instant-run
+    abi="x86"
+    api-level="18"
+    density="420dpi"
+    format="7"
+    timestamp="801670141552652"
+    token="-1282145761216923154" >
+
+    <task
+        name="javac"
+        duration="267" />
+    <task
+        name="instant-run-dex"
+        duration="0" />
+    <task
+        name="instant-run-transform"
+        duration="128" />
+    <task
+        name="verifier"
+        duration="25" />
+
+    <artifact
+        location="D:\cmput301\chuan1-HabitTracker\app\build\outputs\apk\app-debug.apk"
+        type="MAIN" />
+
+    <build timestamp="801670141552652" >
+        <artifact
+            location="D:\cmput301\chuan1-HabitTracker\app\build\outputs\apk\app-debug.apk"
+            type="MAIN" />
+    </build>
+
+</instant-run>

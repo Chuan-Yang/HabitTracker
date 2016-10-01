@@ -29,7 +29,7 @@ import java.util.Date;
 
 public class CompleteHabits extends Activity {
 
-    private static final String FILENAME2 = "HabitOfDay.sav";
+    private static final String FILENAME2 = "HabitOfDay.sav"; // To save the clicked habit
     private static final String FILENAME = "file.sav";
     private ArrayList<Habit> habit = new ArrayList<Habit>();
     private ArrayList<Habit> Habits_day = new ArrayList<Habit>();
@@ -42,12 +42,14 @@ public class CompleteHabits extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_complete_habits);
         // http://stackoverflow.com/questions/13281197/android-how-to-create-clickable-listview
+        // Click a View and enter it
         Day_Habits = (ListView) findViewById(R.id.listView2);
         Day_Habits.setOnItemClickListener (new AdapterView.OnItemClickListener(){
             public void onItemClick(AdapterView<?> l, View v, int position, long id) {
                 // For debug:
                 // Log.i("HelloListView", "You clicked Item: " + id + " at position:" + position);
                 saveInFile(p[position]);
+                // Update the information on the screen
                 Habits_day.clear();
                 adapter.notifyDataSetChanged();
                 Intent intent = new Intent(CompleteHabits.this,complete_a_habit.class);
@@ -72,6 +74,7 @@ public class CompleteHabits extends Activity {
         super.onStart();
         loadFromFile();
         String day_of_week = new SimpleDateFormat("EEEE").format(new Date());
+        // Get the Habits in this day(today) of week
         int l=0;
         p = new int[1000001];
         for (int i = 0; i < habit.size(); i++){

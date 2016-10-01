@@ -29,36 +29,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/idreamyc/chuan1_habittracker/MainActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AddHabit.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/idreamyc/chuan1_habittracker/AddHabit.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.37943926">
-              <caret line="93" column="78" selection-start-line="93" selection-start-column="78" selection-end-line="93" selection-end-column="78" />
-              <folding>
-                <element signature="e#2067#2187#0" expanded="true" />
-                <element signature="e#2186#2187#0" expanded="true" />
-                <element signature="e#2229#4288#0" expanded="true" />
-                <element signature="e#4287#4288#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Habit.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Habit.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/idreamyc/chuan1_habittracker/Habit.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="77" column="0" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.76635516">
+              <caret line="20" column="35" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
               <folding>
                 <element signature="e#1225#1226#0" expanded="true" />
                 <element signature="e#1257#1258#0" expanded="true" />
@@ -1669,6 +1644,10 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/idreamyc/chuan1_habittracker/Habit.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_view_habit.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/idreamyc/chuan1_habittracker/AddHabit.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/idreamyc/chuan1_habittracker/MainActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/idreamyc/chuan1_habittracker/complete_a_habit.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/idreamyc/chuan1_habittracker/CompleteHabits.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/idreamyc/chuan1_habittracker/DeleteHabit_Comp.java" />
       </list>
     </option>
   </component>
@@ -2095,7 +2074,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="0" width="1924" height="1038" extended-state="1" />
+    <frame x="-8" y="0" width="1924" height="1038" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -2163,14 +2142,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/idreamyc/chuan1_habittracker/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/idreamyc/chuan1_habittracker/ViewHabit.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -2209,26 +2180,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/idreamyc/chuan1_habittracker/Habit.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/idreamyc/chuan1_habittracker/AddHabit.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="77" column="0" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
+        <state vertical-scroll-proportion="2.3551402">
+          <caret line="79" column="59" selection-start-line="79" selection-start-column="59" selection-end-line="79" selection-end-column="59" />
           <folding>
-            <element signature="e#1225#1226#0" expanded="true" />
-            <element signature="e#1257#1258#0" expanded="true" />
+            <element signature="e#2097#2217#0" expanded="true" />
+            <element signature="e#2216#2217#0" expanded="true" />
+            <element signature="e#2259#4651#0" expanded="true" />
+            <element signature="e#4650#4651#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/idreamyc/chuan1_habittracker/AddHabit.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/idreamyc/chuan1_habittracker/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37943926">
-          <caret line="93" column="78" selection-start-line="93" selection-start-column="78" selection-end-line="93" selection-end-column="78" />
+        <state vertical-scroll-proportion="0.7196262">
+          <caret line="31" column="22" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/idreamyc/chuan1_habittracker/complete_a_habit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7943925">
+          <caret line="51" column="41" selection-start-line="51" selection-start-column="41" selection-end-line="51" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/idreamyc/chuan1_habittracker/CompleteHabits.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="31" column="84" selection-start-line="31" selection-start-column="84" selection-end-line="31" selection-end-column="84" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/idreamyc/chuan1_habittracker/DeleteHabit_Comp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.4392524">
+          <caret line="56" column="37" selection-start-line="56" selection-start-column="37" selection-end-line="56" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/idreamyc/chuan1_habittracker/Habit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.76635516">
+          <caret line="20" column="35" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
           <folding>
-            <element signature="e#2067#2187#0" expanded="true" />
-            <element signature="e#2186#2187#0" expanded="true" />
-            <element signature="e#2229#4288#0" expanded="true" />
-            <element signature="e#4287#4288#0" expanded="true" />
+            <element signature="e#1225#1226#0" expanded="true" />
+            <element signature="e#1257#1258#0" expanded="true" />
           </folding>
         </state>
       </provider>

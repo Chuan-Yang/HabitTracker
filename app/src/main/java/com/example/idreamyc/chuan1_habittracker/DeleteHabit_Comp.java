@@ -38,7 +38,7 @@ public class DeleteHabit_Comp extends Activity {
                 finish();
             }
         });
-
+        // Delete the habit, Update the information and upload it to the screen
         Button deleteButton = (Button) findViewById(R.id.button7);
         deleteButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -54,6 +54,7 @@ public class DeleteHabit_Comp extends Activity {
             }
         });
 
+        //Delete all the Completions, Update the information and upload it to the screen
         Button delete_compButton = (Button) findViewById(R.id.button6);
         delete_compButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {

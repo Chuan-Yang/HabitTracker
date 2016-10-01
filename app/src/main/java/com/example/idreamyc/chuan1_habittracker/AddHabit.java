@@ -47,7 +47,7 @@ public class AddHabit extends Activity {
         //http://stackoverflow.com/questions/2008558/displaying-a-default-date-in-a-edittext-widget
         SimpleDateFormat sdf = new SimpleDateFormat( "yyyy/MM/dd" );
         date_text.setText(sdf.format( new Date() ));
-        /*
+        /*     initial idea of date part
         try {
             String date_form = date_text.getText().toString();
             date = formatter.parse(date_form);
@@ -77,6 +77,7 @@ public class AddHabit extends Activity {
                 sun = ((CheckBox)findViewById(R.id.checkBox7));
                 boolean[] days_week = new boolean[]{mon.isChecked(),tue.isChecked(),wed.isChecked(),thu.isChecked(),fri.isChecked(),sat.isChecked(),sun.isChecked()};
                 String[] week = {"Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"};
+                // Check which days in the week are checked
                 int l=0;
                 for (int i = 0; i < days_week.length; i++){
                     if (days_week[i]) {
@@ -84,7 +85,7 @@ public class AddHabit extends Activity {
                         l++;
                     }
                 }
-
+                //http://stackoverflow.com/questions/20231539/java-check-the-date-format-of-current-string-is-according-to-required-format-or
                 Date date = null;
                 date_text = (EditText)findViewById(R.id.editText);
 
@@ -92,12 +93,14 @@ public class AddHabit extends Activity {
                     SimpleDateFormat sdf = new SimpleDateFormat("yyyy/MM/dd");
                     date = sdf.parse(date_text.getText().toString());
                     if (!date_text.getText().toString().equals(sdf.format(date))) {
+                        //new_habit.print(date_text.getText().toString());
                         date = null;
                     }
 
                 }catch(ParseException e) {
                     e.printStackTrace();
                 }
+                // Check if the input date form if valid
                 if (date==null)
                   new_habit = new Habit(Habit_name.getText().toString(),weekdays,0);
                 else

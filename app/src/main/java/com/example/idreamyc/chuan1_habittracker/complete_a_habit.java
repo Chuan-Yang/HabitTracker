@@ -49,7 +49,7 @@ public class complete_a_habit extends Activity {
 
         TextView output = (TextView) findViewById(R.id.textView4);
         output.setText(completed_message);
-
+        // Update a habit's complete time
         for (int i =0; i < habit.size();i++) {
             if (Habit_day.equals(habit.get(i))) {
                 Habit_day.setComplete_times(Habit_day.getComplete_times()+1);

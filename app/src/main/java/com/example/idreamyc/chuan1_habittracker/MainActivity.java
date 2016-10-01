@@ -19,17 +19,17 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
-
+    // Add New Habit
     public void add_new_habit(View view){
         Intent intent = new Intent(this, AddHabit.class);
         startActivity(intent);
     }
-
+    // View All Habits
     public void view_all_habits(View view){
         Intent intent = new Intent(this, ViewHabit.class);
         startActivity(intent);
     }
-
+    //Complete a Habit
     public void CompleteHabits(View view){
         Intent intent = new Intent(this, CompleteHabits.class);
         startActivity(intent);

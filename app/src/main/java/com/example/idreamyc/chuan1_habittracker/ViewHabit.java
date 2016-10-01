@@ -27,16 +27,22 @@ import java.util.ArrayList;
 public class ViewHabit extends Activity {
     private static final String FILENAME = "file.sav";
     private static final String FILENAME2 = "HabitOfDay.sav";
+    //private static final String FILENAME3 = "CompletedHabits.sav";
+    //private static final String FILENAME4 = "ToDoHabits.sav";
     private ArrayList<Habit> habit = new ArrayList<Habit>();
+    private ArrayList<Habit> completed_habit = new ArrayList<Habit>();
+    private ArrayList<Habit> todo_habit = new ArrayList<Habit>();
     private ArrayAdapter<Habit> adapter;
-    private ListView oldHabits;
+    private ListView oldHabits1; // use to show the completed habits
+    private ListView oldHabits2; // use to show the todo habits
+    int[] index1,index2; //use to record the index for completed and todo habtis
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_view_habit);
 
-        oldHabits = (ListView) findViewById(R.id.listView);
+        oldHabits1 = (ListView) findViewById(R.id.listView);
         Button backButton = (Button) findViewById(R.id.button3);
         backButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -44,13 +50,31 @@ public class ViewHabit extends Activity {
             }
         });
 
-        oldHabits = (ListView) findViewById(R.id.listView);
-        oldHabits.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        oldHabits1 = (ListView) findViewById(R.id.listView);
+        oldHabits1.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             public void onItemClick(AdapterView<?> l, View v, int position, long id) {
                 // For debug:
                 // Log.i("HelloListView", "You clicked Item: " + id + " at position:" + position);
-                saveInFile(position);
+                saveInFile(index1[position]);
                 habit.clear();
+                completed_habit.clear();
+                todo_habit.clear();
+                adapter.notifyDataSetChanged();
+                Intent intent = new Intent(ViewHabit.this, DeleteHabit_Comp.class);
+                startActivity(intent);
+                loadFromFile();
+            }
+        });
+
+        oldHabits2 = (ListView) findViewById(R.id.listView3);
+        oldHabits2.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            public void onItemClick(AdapterView<?> l, View v, int position, long id) {
+                // For debug:
+                // Log.i("HelloListView", "You clicked Item: " + id + " at position:" + position);
+                saveInFile(index2[position]);
+                habit.clear();
+                todo_habit.clear();
+                completed_habit.clear();
                 adapter.notifyDataSetChanged();
                 Intent intent = new Intent(ViewHabit.this, DeleteHabit_Comp.class);
                 startActivity(intent);
@@ -63,9 +87,31 @@ public class ViewHabit extends Activity {
         // TODO Auto-generated method stub
         super.onStart();
         loadFromFile();
+        todo_habit.clear();
+        completed_habit.clear();
+        int l1=0,l2=0; // length of index1 and index2
+        index1 = new int[100001];
+        index2 = new int[100001];
+        for(int i =0;i<habit.size();i++){
+            if (habit.get(i).getComplete_times() == 0) {
+                todo_habit.add(habit.get(i));
+                index2[l2] = i;
+                l2++;
+            }
+            else {
+                completed_habit.add(habit.get(i));
+                index1[l1] = i;
+                l1++;
+            }
+        }
+
         adapter = new ArrayAdapter<Habit>(this,
-                R.layout.list_item, habit);
-        oldHabits.setAdapter(adapter);
+                R.layout.list_item, completed_habit);
+        oldHabits1.setAdapter(adapter);
+
+        adapter = new ArrayAdapter<Habit>(this,
+                R.layout.list_item, todo_habit);
+        oldHabits2.setAdapter(adapter);
     }
 
     private void saveInFile(int position) {

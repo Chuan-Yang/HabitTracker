@@ -3,6 +3,7 @@ package com.example.idreamyc.chuan1_habittracker;
 import android.util.Log;
 
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
 
 /**
@@ -12,21 +13,34 @@ public class Habit {
     private String habit;
     private String date;
     private String[] days_week;
+
+
+    private ArrayList<Date> complete_time = new ArrayList<Date>();
     int complete_times;
 
-    public Habit(String habit, String[] days_week, int complete_times){
+    public Habit(String habit, String[] days_week, int complete_times, ArrayList<Date> complete_time){
         this.habit = habit;
+        this.complete_time = complete_time;
         SimpleDateFormat sdf = new SimpleDateFormat( "yyyy/MM/dd" );
         this.date = sdf.format( new Date() );
         this.days_week = days_week;
         this.complete_times=complete_times;
     }
 
-    public Habit(String date, String habit, String[] days_week, int complete_times){
+    public Habit(String date, String habit, String[] days_week, int complete_times, ArrayList<Date> complete_time){
         this.date = date;
+        this.complete_time = complete_time;
         this.habit = habit;
         this.days_week = days_week;
         this.complete_times=complete_times;
+    }
+
+    public ArrayList<Date> getComplete_time() {
+        return complete_time;
+    }
+
+    public void setComplete_time(ArrayList<Date> complete_time) {
+        this.complete_time = complete_time;
     }
 
     public void setComplete_times(int complete_times) {
@@ -36,6 +50,7 @@ public class Habit {
     public int getComplete_times() {
         return complete_times;
     }
+
     public void setHabit(String habit) {
         this.habit = habit;
     }
@@ -61,6 +76,10 @@ public class Habit {
     }
 
     public String toString(){
+        return  habit+"\nCompleted Times: "+complete_times;
+    }
+
+    public String details(){
         String days="";
         for (int i = 0; i<days_week.length;i++){
             if (days_week[i] != null){

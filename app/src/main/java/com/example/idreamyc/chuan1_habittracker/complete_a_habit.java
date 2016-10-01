@@ -22,6 +22,7 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.lang.reflect.Type;
 import java.util.ArrayList;
+import java.util.Date;
 
 public class complete_a_habit extends Activity {
 
@@ -43,17 +44,24 @@ public class complete_a_habit extends Activity {
         loadFromFile();
         loadFromFile2();
 
-        completed_message = Habit_day.toString()+"\nThe Completed time for HABIT["+ Habit_day.getHabit() +
+        completed_message = Habit_day.details()+"\nThe Completed time for HABIT["+ Habit_day.getHabit() +
                 "]: +1\nPresent Completed times: "+ String.valueOf(Habit_day.getComplete_times()+1) ;
         //Habit_day.setComplete_times(Habit_day.getComplete_times()+1);
 
         TextView output = (TextView) findViewById(R.id.textView4);
         output.setText(completed_message);
         // Update a habit's complete time
+        ArrayList<Date> date = Habit_day.getComplete_time();
+        //date = Habit_day.getComplete_time();
+        Date p = new Date();
+        date.add(p);
+
         for (int i =0; i < habit.size();i++) {
             if (Habit_day.equals(habit.get(i))) {
                 Habit_day.setComplete_times(Habit_day.getComplete_times()+1);
+                Habit_day.setComplete_time(date);
                 habit.get(i).setComplete_times(Habit_day.getComplete_times());
+                habit.get(i).setComplete_time(Habit_day.getComplete_time());
                 //habit.get(i).print(String.valueOf(Habit_day.getComplete_times()));
                 //output.setText(completed_message);
                 saveInFile();

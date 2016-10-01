@@ -1,6 +1,7 @@
 package com.example.idreamyc.chuan1_habittracker;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -58,7 +59,9 @@ public class DeleteHabit_Comp extends Activity {
         Button delete_compButton = (Button) findViewById(R.id.button6);
         delete_compButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                for (int i =0; i < habit.size();i++) {
+                Intent intent = new Intent(DeleteHabit_Comp.this, DeleteCompletions.class);
+                startActivity(intent);
+                /*for (int i =0; i < habit.size();i++) {
                     if (Habit_day.equals(habit.get(i))) {
                         String done_message="The Habit: "+habit.get(i).getHabit()+"'s completions have been deleted!";
                         habit.get(i).setComplete_times(0);
@@ -66,18 +69,24 @@ public class DeleteHabit_Comp extends Activity {
                         TextView output = (TextView) findViewById(R.id.textView6);
                         output.setText(done_message);
 
-                        message = habit.get(i).toString()+"\n";
+                        message = habit.get(i).details()+"\n";
                         output = (TextView) findViewById(R.id.textView5);
                         output.setText(message);
+
+
                     }
-                }
+                }*/
             }
         });
 
+    }
+
+    protected void onStart(){
+        super.onStart();
         loadFromFile();
         loadFromFile2();
 
-        message = Habit_day.toString()+"\n";
+        message = Habit_day.details()+"\n";
         TextView output = (TextView) findViewById(R.id.textView5);
         output.setText(message);
     }

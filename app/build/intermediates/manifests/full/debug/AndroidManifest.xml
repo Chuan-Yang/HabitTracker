@@ -26,6 +26,7 @@
         <activity android:name="com.example.idreamyc.chuan1_habittracker.CompleteHabits" />
         <activity android:name="com.example.idreamyc.chuan1_habittracker.complete_a_habit" />
         <activity android:name="com.example.idreamyc.chuan1_habittracker.DeleteHabit_Comp" />
+        <activity android:name="com.example.idreamyc.chuan1_habittracker.DeleteCompletions" />
     </application>
 
 </manifest>

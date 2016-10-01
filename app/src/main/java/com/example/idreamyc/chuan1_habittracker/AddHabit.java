@@ -102,9 +102,9 @@ public class AddHabit extends Activity {
                 }
                 // Check if the input date form if valid
                 if (date==null)
-                  new_habit = new Habit(Habit_name.getText().toString(),weekdays,0);
+                  new_habit = new Habit(Habit_name.getText().toString(),weekdays,0, new ArrayList<Date>());
                 else
-                    new_habit = new Habit(date_text.getText().toString(),Habit_name.getText().toString(),weekdays,0);
+                    new_habit = new Habit(date_text.getText().toString(),Habit_name.getText().toString(),weekdays,0, new ArrayList<Date>());
                 loadFromFile();
                 habit.add(new_habit);
                 saveInFile();

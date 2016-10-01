@@ -19,7 +19,8 @@
         <activity android:name=".ViewHabit" />
         <activity android:name=".CompleteHabits" />
         <activity android:name=".complete_a_habit" />
-        <activity android:name=".DeleteHabit_Comp"></activity>
+        <activity android:name=".DeleteHabit_Comp" />
+        <activity android:name=".DeleteCompletions"></activity>
     </application>
 
 </manifest>

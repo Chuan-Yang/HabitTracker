@@ -4,52 +4,30 @@
     api-level="18"
     density="420dpi"
     format="7"
-    timestamp="21393904633603"
-    token="-1282145761216923154"
-    verifier="COMPATIBLE" >
+    timestamp="25962764989443"
+    token="-1282145761216923154" >
 
     <task
         name="javac"
-        duration="126" />
+        duration="416" />
     <task
         name="instant-run-dex"
-        duration="474" />
+        duration="0" />
     <task
         name="instant-run-transform"
-        duration="68" />
+        duration="173" />
     <task
         name="verifier"
-        duration="2" />
+        duration="22" />
 
     <artifact
-        location="D:\cmput301\chuan1-HabitTracker\app\build\intermediates\reload-dex\debug\classes.dex"
-        type="RELOAD_DEX" />
+        location="D:\cmput301\chuan1-HabitTracker\app\build\outputs\apk\app-debug.apk"
+        type="MAIN" />
 
-    <build timestamp="21104829162531" >
+    <build timestamp="25962764989443" >
         <artifact
             location="D:\cmput301\chuan1-HabitTracker\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />
-    </build>
-    <build
-        timestamp="21157090392565"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="D:\cmput301\chuan1-HabitTracker\app\build\intermediates\builds\debug\21157090392565\classes.dex"
-            type="RELOAD_DEX" />
-    </build>
-    <build
-        timestamp="21345145798041"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="D:\cmput301\chuan1-HabitTracker\app\build\intermediates\builds\debug\21345145798041\classes.dex"
-            type="RELOAD_DEX" />
-    </build>
-    <build
-        timestamp="21393904633603"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="D:\cmput301\chuan1-HabitTracker\app\build\intermediates\reload-dex\debug\classes.dex"
-            type="RELOAD_DEX" />
     </build>
 
 </instant-run>

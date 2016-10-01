@@ -64,12 +64,12 @@
         "source": "D:\\cmput301\\chuan1-HabitTracker\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\abc_expanded_menu_layout.xml"
     },
     {
-        "merged": "D:\\cmput301\\chuan1-HabitTracker\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_lines.xml",
-        "source": "D:\\cmput301\\chuan1-HabitTracker\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\notification_template_lines.xml"
-    },
-    {
         "merged": "D:\\cmput301\\chuan1-HabitTracker\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_complete_a_habit.xml",
         "source": "D:\\cmput301\\chuan1-HabitTracker\\app\\src\\main\\res\\layout\\activity_complete_a_habit.xml"
+    },
+    {
+        "merged": "D:\\cmput301\\chuan1-HabitTracker\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_lines.xml",
+        "source": "D:\\cmput301\\chuan1-HabitTracker\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\notification_template_lines.xml"
     },
     {
         "merged": "D:\\cmput301\\chuan1-HabitTracker\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_complete_habits.xml",

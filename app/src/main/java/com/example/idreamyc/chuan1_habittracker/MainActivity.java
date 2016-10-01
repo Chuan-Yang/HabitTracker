@@ -34,4 +34,8 @@ public class MainActivity extends Activity {
         Intent intent = new Intent(this, CompleteHabits.class);
         startActivity(intent);
     }
+    //End the app
+    public void exit(View view){
+        finish();
+    }
 }

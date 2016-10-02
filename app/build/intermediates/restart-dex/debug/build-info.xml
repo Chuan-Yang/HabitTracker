@@ -4,27 +4,27 @@
     api-level="18"
     density="420dpi"
     format="7"
-    timestamp="16813842524444"
+    timestamp="19047522913975"
     token="-1282145761216923154" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="1113" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="675" />
     <task
         name="verifier"
-        duration="0" />
+        duration="285" />
 
     <artifact
         location="D:\cmput301\chuan1-HabitTracker\app\build\outputs\apk\app-debug.apk"
         type="MAIN" />
 
-    <build timestamp="16813842524444" >
+    <build timestamp="19047522913975" >
         <artifact
             location="D:\cmput301\chuan1-HabitTracker\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />

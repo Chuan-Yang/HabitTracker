@@ -35,8 +35,6 @@ public class CompleteHabits extends Activity {
     private ArrayList<Habit> Habits_day = new ArrayList<Habit>();
     private ArrayAdapter<Habit> adapter;
     private ListView Day_Habits1, Day_Habits2;
-    private ListView oldHabits1; // use to show the completed habits
-    private ListView oldHabits2; // use to show the todo habits
     int[] index1,index2; //use to record the index for completed and todo habtis
     private ArrayList<Habit> completed_habit = new ArrayList<Habit>();
     private ArrayList<Habit> todo_habit = new ArrayList<Habit>();

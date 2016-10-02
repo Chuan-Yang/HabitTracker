@@ -81,13 +81,17 @@ public class Habit {
 
     public String details(){
         String days="";
-        for (int i = 0; i<days_week.length;i++){
+        for (int i = 0; i<7 ;i++){
             if (days_week[i] != null){
                 days += days_week[i];
                 days+=" ";
             }
         }
-        return   "Habit Name: " + habit + "\nAdded Date: " + date + "\nAdded days: "+ days +"\nCompleted Time: " + complete_times + "\n";
+        String comp_date = "";
+        for (int i =0; i < complete_time.size(); i++)
+            comp_date+=complete_time.get(i).toString() +"\n";
+        return   "Habit Name: " + habit + "\nAdded Date: " + date + "\nAdded days: "+ days +"\nCompleted Times: " + complete_times +
+                "\nComplete Time: \n" + comp_date;
     }
 
     // for debugging

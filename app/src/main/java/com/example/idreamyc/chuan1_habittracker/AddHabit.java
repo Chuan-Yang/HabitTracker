@@ -79,7 +79,7 @@ public class AddHabit extends Activity {
                 String[] week = {"Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"};
                 // Check which days in the week are checked
                 int l=0;
-                for (int i = 0; i < days_week.length; i++){
+                for (int i = 0; i < 7; i++){
                     if (days_week[i]) {
                         weekdays[l] = week[i];
                         l++;

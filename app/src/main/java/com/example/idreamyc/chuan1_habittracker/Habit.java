@@ -100,7 +100,7 @@ public class Habit {
     }
 
     @Override
-    public boolean equals(Object object2) {
+        public boolean equals(Object object2) {
         return object2 instanceof Habit && habit.equals(((Habit)object2).habit);
     }
 }

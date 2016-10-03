@@ -11,9 +11,6 @@ import android.widget.EditText;
 import java.util.ArrayList;
 
 public class MainActivity extends Activity {
-    public final static String EXTRA_MESSAGE = "com.idreamyc.chuan1_habittracker.MESSAGE";
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
